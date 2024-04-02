@@ -1,0 +1,14 @@
+#laatikko {
+    width: 150px;
+    height: 150px;
+    background-color: darkmagenta;
+    color: white;
+    margin: 100px;
+    padding: 25px;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+#laatikko:hover {
+    transform: rotate(45deg) scale(1.3);
+}

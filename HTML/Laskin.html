@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laskin</title>
+    <script>
+        function laskeSumma() {
+            const luku1 = document.getElementById("luku1").value;
+            const luku2 = document.getElementById("luku2").value;
+            const summa = parseInt(luku1) + parseInt(luku2);
+
+            alert("Lukujen summa: " + summa);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Laskin</h1>
+    <p>Syötä tekstikenttiin kaksi lukua ja paina Summa-nappia.</p>
+
+    <p>
+        <input type="number" id="luku1" />
+    </p>
+    <p>
+        <input type="number" id="luku2" />
+    </p>
+
+    <button onclick="laskeSumma()">Summa</button>
+</body>
+
+</html>

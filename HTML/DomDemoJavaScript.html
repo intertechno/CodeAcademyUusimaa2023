@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM-demo JavaScriptillä</title>
+</head>
+
+<body>
+
+    <script>
+        const nappi = document.createElement("button");
+
+        nappi.innerText = "Klikkaa tästä!";
+        nappi.style.cssText = ""
+        nappi.style.backgroundColor = "blue";
+        nappi.style.color = "white";
+        nappi.style.fontSize = "22px";
+        nappi.style.padding = "10px";
+
+        nappi.onclick = () => alert("Moi JavaScript!");
+
+        document.body.appendChild(nappi);
+    </script>
+</body>
+
+</html>

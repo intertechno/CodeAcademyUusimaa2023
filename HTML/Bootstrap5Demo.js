@@ -1,0 +1,4 @@
+function sanoMoi()
+{
+    alert("Moikka!");
+}

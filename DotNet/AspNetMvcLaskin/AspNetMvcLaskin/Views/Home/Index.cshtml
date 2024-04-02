@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script>
+    function laskeSumma() {
+        const luku1 = document.getElementById("luku1").value;
+        const luku2 = document.getElementById("luku2").value;
+        const summa = parseInt(luku1) + parseInt(luku2);
+
+        alert("Lukujen summa: " + summa);
+    }
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1>Laskin</h1>
+<p>Syötä tekstikenttiin kaksi lukua ja paina Summa-nappia.</p>
+
+<p>
+    <input type="number" id="luku1" class="form-control w-25" />
+</p>
+<p>
+    <input type="number" id="luku2" class="form-control w-25" />
+</p>
+
+<button onclick="laskeSumma()" class="btn btn-primary">Summa</button>
+
+
+<h2 class="mt-5">For-silmukka</h2>
+@for (int i = 1; i <= 10; i++)
+{
+    <p>@i</p>
+}
